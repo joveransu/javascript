@@ -16,19 +16,9 @@
 <body>
     <h1>Olá, Mundo!</h1>
     <p>Já me livrei da maldição!</p>
-    <!--
-        Carrega primeiro
-        1° Estilos
-        2° Scripts
-        3° Conteudo
-    -->
     <script>
-        window.alert('Minha primeira mensagem')
-        // Apenas um alerta na tela
-        window.confirm('Esta gostando de JS?')
-        // Tera resposta de Ok e Cancel (True - False)
-        window.prompt('Qual é seu nome?')
-        // Você pode por textos no códigos (Como um input do python)
+        var nome = window.prompt('Qual é seu nome?')
+        window.alert('É um grande prazer te conhecer, ' + nome + '!')
     </script>
 </body>
 </html>

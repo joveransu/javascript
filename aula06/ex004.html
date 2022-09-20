@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 2em Arial;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt('Qual seu nome?')
+        //Escreve na tela
+        document.write(`Olá, ${nome}! Seu nome tem ${nome.length} letras.`)
+        //Comando abaixo não tava funcionando, por isso a tag <br>
+        document.writeln(`<br>Seu nome maiúsculo é ${nome.toUpperCase()}`)
+        document.writeln(`<br>Seu nome minusculo é ${nome.toLowerCase()}`)
+
+        var n1 = 1545.5
+        var teste = n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        //n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+        //n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})
+        window.alert(teste)
+    </script>
+</body>
+</html>
