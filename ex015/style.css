@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: rgb(79, 79, 255);
+    background-color:rgb(49, 195, 244);
     color: white;
 }
 
@@ -30,4 +30,27 @@ footer {
     text-align: center;
     color: white;
     font-style: italic;
+}
+
+div {
+    color: black;
+    text-align: left;
+    font-size: bold;
+}
+
+p {
+    padding: 8px;
+}
+
+#butao {
+    padding: 2px 5px;
+}
+
+img {
+    display: block;
+    margin: auto;
+    padding: 15px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
