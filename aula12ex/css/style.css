@@ -31,3 +31,16 @@ footer {
     color: white;
     font-style: italic;
 }
+
+div {
+    color: black;
+    text-align: center;
+    font-size: bold;
+}
+
+img {
+    padding: 15px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
