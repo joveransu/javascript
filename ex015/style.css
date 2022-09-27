@@ -42,7 +42,11 @@ p {
     padding: 8px;
 }
 
-#butao {
+p#res{
+    text-align: center;
+}
+
+#botao {
     padding: 2px 5px;
 }
 
