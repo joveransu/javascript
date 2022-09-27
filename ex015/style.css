@@ -42,10 +42,6 @@ p {
     padding: 8px;
 }
 
-p#res{
-    text-align: center;
-}
-
 #botao {
     padding: 2px 5px;
 }
@@ -54,7 +50,7 @@ img {
     display: block;
     margin: auto;
     padding: 15px;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
 }

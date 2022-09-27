@@ -11,34 +11,40 @@ function showImage() {
     var sexo = document.getElementById('m').checked //Se true, ele é homem, se não, mulher]
     var res = document.getElementById('res')
     var idade = Number(agora) - Number(nasci)
-    var div = document.getElementById('photo')
+    var genero = ''
+
+    var img = document.createElement('img')
+    img.setAttribute('id', 'photo')
 
     if (sexo){
-        res.innerHTML = `Detectamos um <strong>Homem</strong> de <strong>${idade}</strong> anos de idade.`
-        
+        genero = 'Homem'
         if(idade < 18){
             //Criança
-            div.innerHTML = '<img src="ansu.jpg" alt="imagem.jpg"></img>'
+            img.setAttribute('src', 'criancaM.jpg')
         } else if(idade < 50){
             //Adulto
-            div.innerHTML = '<img src="ansu.jpg" alt="imagem.jpg"></img>'
+            img.setAttribute('src', 'ansu.jpg')
         } else {
             //Velho
-            div.innerHTML = '<img src="ansu.jpg" alt="imagem.jpg"></img>'
+            img.setAttribute('src', 'idosoM.jpg')
         }
 
     } else {
-        res.innerHTML = `Detectamos uma <strong>Mulher</strong> de <strong>${idade}</strong> anos de idade.`
+        genero = 'Mulher'
         if(idade < 18){
             //Criança
-            div.innerHTML = '<img src="ansu.jpg" alt="imagem.jpg"></img>'
+            img.setAttribute('src', 'criancaF.jpg')
         } else if(idade < 50){
             //Adulto
-            div.innerHTML = '<img src="ansu.jpg" alt="imagem.jpg"></img>'
+            img.setAttribute('src', 'adultoF.jpg')
         } else {
             //Velho
-            div.innerHTML = '<img src="ansu.jpg" alt="imagem.jpg"></img>'
+            img.setAttribute('src', 'idosoF.jpg')
         }
     }
     
+    res.style.textAlign = 'center'
+    res.innerHTML = `Detectamos <strong>${genero}</strong> de <strong>${idade}</strong> anos de idade.`
+    //Ira adicionar a imagem apos o res (tag paragrafo)
+    res.appendChild(img)
 }
