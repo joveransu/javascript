@@ -4,7 +4,7 @@ function showTabuada(){
         alert('Digite um valor')
     }else{
         var lista = document.getElementById('lista')
-        for(var c = 1; c < num+1; c++){
+        for(var c = 1; c <= 10; c++){
             var newNum = document.createElement('li')
             newNum.innerHTML = `${c} X ${num} = ${c*num}`
             lista.appendChild(newNum)
