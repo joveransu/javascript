@@ -1,20 +1,22 @@
-function checkTime(){
-    var agora = new Date()
-    var hora = agora.getHours()
-    var photo = document.getElementById('photo')
-    var phoras = document.getElementById('phoras')
-    var bg = document.getElementsByTagName('body')[0]
-    if (hora > -1 && hora < 12){
-        phoras.innerHTML = `Bom dia, são exatamente ${hora} horas!`
-        photo.src = 'fotos/manha.jpg'
-        bg.style.backgroundColor = '#bed0de'
-    } else if (hora <= 18 ) {
-        phoras.innerHTML = `Boa tarde, são exatamente ${hora} horas!`
-        photo.src = 'fotos/tarde.jpg'
-        document.body.backgroundColor = '#fa9500'
-    } else {
-        phoras.innerHTML = `Boa noite, são exatamente ${hora} horas!`
-        photo.src = 'fotos/noite.jpg'
-        bg.style.backgroundColor = '#9a7fb6'
+function count(){
+    var ini = Number(document.getElementById('ini').value)
+    var fim = Number(document.getElementById('fim').value)
+    var pas = Number(document.getElementById('pas').value)
+
+    if (pas == 0){
+        alert('Passo inválido, considerando passo 1')
+        pas = 1
+    }
+
+    if (!ini || !fim || !pas){
+        document.getElementById('contagem').innerHTML = 'ERRO: Preencha todas caixas.'
+    }else {
+        var text = ''
+        while (ini < fim+pas){
+            text += `👉 ${ini} `
+            ini += pas
+        }
+        text += '🏴'
+        document.getElementById('contagem').innerHTML = text
     }
 }
