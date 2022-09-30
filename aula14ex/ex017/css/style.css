@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #bed0de;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+}
+
+main {
+    max-width: 500px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.273);
+}
+
+footer {
+    padding-top: 15px;
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
+
+div {
+    color: black;
+    text-align: center;
+    font-size: bold;
+}
+
+img {
+    padding: 15px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
