@@ -12,11 +12,19 @@ function count(){
         document.getElementById('contagem').innerHTML = 'ERRO: Preencha todas caixas.'
     }else {
         var text = ''
-        while (ini < fim+pas){
-            text += `👉 ${ini} `
-            ini += pas
+        if (ini <= fim){
+            while (ini <= fim){
+                text += `\u{1F449} ${ini} `
+                ini += pas
+            }
+            text += `\u{1F3F4}`
+        } else {
+            while (ini >= fim){
+                text += `\u{1F449} ${ini} `
+                ini -= pas
+            }
+            text += `\u{1F3F4}`
         }
-        text += '🏴'
         document.getElementById('contagem').innerHTML = text
     }
 }
