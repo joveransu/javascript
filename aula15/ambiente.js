@@ -1,8 +1,7 @@
-let num = [2, 3, 7]
-num[3] = 7
+let num = [2, 3, 7, 9, 1]
 num.push(5)//Adiciona na ultima vaga
 
-console.log(`Nosso vetor tem ${num.length} e é ${num}`)
+console.log(`Nosso vetor tem ${num.length} elementos, que são ${num}`)
 num.sort()//Coloca em ordem
 console.log(num)
 

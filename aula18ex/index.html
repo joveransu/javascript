@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio JS 17</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de numeros</h1>
+    </header>
+    <main>
+        <div>
+            <label for="n">Numero de 1 a 100: </label>
+            <input type="number" name="n" id="n" min="1" max="100">
+            <input type="button" value="Adicionar" onclick="addNumber()">
+            <br>
+            <select name="listn" id="listn" size="10" style="width:150px; margin-top: 10px;">
+                
+            </select>
+            <p><input type="button" value="Visualizar" onclick="showData()"></p>
+        </div>
+        <div id="list-numbers">
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy; JoverAnsu</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
